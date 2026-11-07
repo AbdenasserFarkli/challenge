@@ -4,7 +4,7 @@ function addelement() {
     const li = document.createElement("li")
     note=note+1
     li.textContent=`Note n° ${note}`
-    parentsnote.append(li)
+li.classList.add("p-2", "bg-yellow-100", "rounded");    parentsnote.prepend(li)
     
 }
 document.getElementById("ajouter").addEventListener("click",addelement)
